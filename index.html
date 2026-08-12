@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/svgmap@2.21.0/dist/svg-map.umd.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/svgmap@2.21.0/dist/svg-map.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="horizontal-nav">
@@ -64,6 +69,18 @@
               <p class="stat-label">Target carcase weight</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section section-map">
+        <div class="section-inner">
+          <p class="eyebrow">Exports</p>
+          <h3>Worldwide genetics</h3>
+          <p>
+            We export our world class genetics to locations across the globe
+            including the United States.
+          </p>
+          <div class="section-map-inner" id="usage-map"></div>
         </div>
       </section>
 
@@ -126,5 +143,7 @@
     <footer class="site-footer">
       <p>Wingfield Wagyu - 2026</p>
     </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/map.js" defer></script>
   </body>
 </html>

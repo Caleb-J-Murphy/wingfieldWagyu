@@ -183,8 +183,13 @@ button:focus-visible {
   padding: 4rem 1.5rem;
 }
 
+.section-map-inner {
+  padding: 2rem 0rem 0rem 0rem;
+}
+
 .section-about .section-inner,
 .section-program .section-inner,
+.section-map .section-inner,
 .section-land .section-inner {
   max-width: 680px;
 }
@@ -377,4 +382,11 @@ button:focus-visible {
   * {
     transition: none !important;
   }
+}
+
+.svgMap-tooltip {
+  display: none !important;
+}
+#usage-map .svgMap-map-wrapper {
+  background-color: var(--color-bg-alt);
 }
