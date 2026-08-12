@@ -181,12 +181,6 @@ button:focus-visible {
   padding: 4rem 1.5rem;
 }
 
-/* Narrow, text-focused sections read better at column width */
-.section-about .section-inner,
-.section-map .section-inner {
-  max-width: 680px;
-}
-
 .eyebrow {
   font-family: var(--font-body);
   font-size: 0.78rem;
@@ -205,6 +199,13 @@ button:focus-visible {
 .section p {
   color: var(--color-ink-soft);
   max-width: 56ch;
+}
+
+/* Shared wrapper: keeps eyebrow/h3/p starting at the same x-position
+   across every section, regardless of what sits below it (grid, map, etc). */
+.section-intro {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 /* ---------------------------------------------
