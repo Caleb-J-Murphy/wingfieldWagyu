@@ -172,7 +172,9 @@ button:focus-visible {
   background-position: center;
 
   filter: blur(4px);
-  transform: scale(1.06);
+
+  transform: scale(1.08) translateY(0);
+  will-change: transform;
 }
 
 .hero-overlay {
