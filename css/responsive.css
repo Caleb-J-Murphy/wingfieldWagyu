@@ -233,13 +233,18 @@
 
   .contact-heading {
     margin-left: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-heading h2 {
+    max-width: none;
   }
 
   .farmer-profile {
+    display: grid;
     grid-template-columns: 1fr;
 
-    gap: 2rem;
+    gap: 2.5rem;
 
     margin-left: 0;
     padding: 3rem 0;
@@ -250,15 +255,58 @@
   .farmer-photo {
     width: 145px;
     height: 145px;
+
+    margin: 0 auto;
+  }
+
+  .farmer-details {
+    width: 100%;
+  }
+
+  .farmer-role {
+    margin-bottom: 0.5rem;
   }
 
   .farmer-details h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    font-size: 2rem;
+  }
+
+  .farmer-contact {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .farmer-contact li {
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+
+    gap: 0.75rem;
+
+    align-items: baseline;
+
+    font-size: 0.9rem;
+  }
+
+  .contact-label {
+    min-width: 0;
+    font-size: 0.68rem;
+    line-height: 1.4;
+  }
+
+  .farmer-contact a {
+    overflow-wrap: anywhere;
+  }
+  .farmer-contact a,
+  .farmer-contact li > span:last-child {
+    line-height: 1.4;
   }
 
   .contact-side-note {
     grid-column: auto;
+
     max-width: 280px;
+    margin-top: 0.5rem;
   }
 
   /* Footer */
