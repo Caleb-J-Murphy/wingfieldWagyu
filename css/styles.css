@@ -109,13 +109,37 @@ button:focus-visible {
    Hero
 --------------------------------------------- */
 .hero {
+  position: relative;
   background: var(--color-hero-bg);
   color: var(--color-hero-text);
   padding: 6.5rem 1.5rem 5.5rem;
   text-align: center;
+  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -20px;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  transform: scale(1.08);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(33, 29, 25, 0.68);
 }
 
 .hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -223,6 +247,7 @@ button:focus-visible {
 --------------------------------------------- */
 .section-farmer {
   border-bottom: none;
+  scroll-margin-top: 4.5rem;
 }
 
 .farmer-card {
@@ -251,6 +276,12 @@ button:focus-visible {
   font-weight: 500;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
+}
+
+.farmer-bio {
+  color: var(--color-ink-soft);
+  max-width: 52ch;
+  margin-bottom: 1.6rem;
 }
 
 .farmer-contact {
