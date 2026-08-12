@@ -3,165 +3,270 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Wingfield Wagyu</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
     <script src="https://cdn.jsdelivr.net/npm/svgmap@2.21.0/dist/svg-map.umd.min.js"></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/svgmap@2.21.0/dist/svg-map.min.css"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <nav class="horizontal-nav">
-      <ul>
-        <li class="brand">WINGFIELD WAGYU</li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="horizontal-nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a class="brand" href="#">WINGFIELD WAGYU</a>
+
+        <a class="nav-contact" href="#contact">Contact</a>
+      </div>
     </nav>
 
-    <header class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <h1>WINGFIELD WAGYU</h1>
-        <h2>Breeding world class genetics</h2>
-      </div>
-    </header>
-
     <main>
+      <!-- Hero -->
+      <header class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <p class="hero-kicker">Yuleba · Queensland</p>
+
+          <h1>WINGFIELD<br />WAGYU</h1>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+
+          <p class="hero-subtitle">Breeding world class genetics</p>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="hero-scroll-line"></span>
+        </div>
+      </header>
+
+      <!-- About / Herd -->
       <section class="section section-about">
         <div class="section-inner">
-          <div class="section-intro">
-            <p class="eyebrow">Our Herd</p>
-            <h3>Full-blood genetics, bred for the long term</h3>
-            <p>
-              Wingfield Wagyu is a full-blood breeding operation built on
-              imported Japanese Black bloodlines, selected over three decades
-              for marbling, structure, and temperament. Every animal in our herd
-              is registered with the Australian Wagyu Association and
-              pedigree-traced back to its founding genetics.
-            </p>
-          </div>
-        </div>
-      </section>
+          <div class="about-layout">
+            <div class="section-intro about-intro">
+              <p class="eyebrow">Our Herd</p>
 
-      <section class="section section-stats">
-        <div class="section-inner">
-          <div class="stat-grid">
+              <h2>Full-blood genetics, bred for the long term</h2>
+
+              <p class="intro-copy">
+                Wingfield Wagyu is a full-blood breeding operation built on
+                imported Japanese Black bloodlines, selected over three decades
+                for marbling, structure, and temperament.
+              </p>
+
+              <p class="intro-copy">
+                Every animal in our herd is registered with the Australian Wagyu
+                Association and pedigree-traced back to its founding genetics.
+              </p>
+            </div>
+
+            <div class="about-note">
+              <span class="about-note-line"></span>
+              <p>
+                A long-term approach to breeding, built around proven genetics
+                and careful selection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Herd statistics -->
+          <div class="stat-grid" aria-label="Wingfield Wagyu statistics">
             <div class="stat">
-              <p class="stat-value">Est. 1995</p>
+              <p class="stat-value">1995</p>
               <p class="stat-label">Breeding on-farm</p>
             </div>
+
             <div class="stat">
-              <p class="stat-value">600+</p>
-              <p class="stat-label">Full-blood head, DNA parent-verified</p>
+              <p class="stat-value">600<span>+</span></p>
+              <p class="stat-label">
+                Full-blood head<br />
+                DNA parent-verified
+              </p>
             </div>
+
             <div class="stat">
-              <p class="stat-value">MS9+</p>
-              <p class="stat-label">Marbling score, AUS-MEAT scale</p>
+              <p class="stat-value">MS9<span>+</span></p>
+              <p class="stat-label">
+                Marbling score<br />
+                AUS-MEAT scale
+              </p>
             </div>
+
             <div class="stat">
-              <p class="stat-value">450kg+</p>
-              <p class="stat-label">Target carcase weight</p>
+              <p class="stat-value">450kg<span>+</span></p>
+              <p class="stat-label">
+                Target<br />
+                carcase weight
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Exports -->
       <section class="section section-map">
         <div class="section-inner">
-          <div class="section-intro">
-            <p class="eyebrow">Exports</p>
-            <h3>Worldwide genetics</h3>
-            <p>
-              We export our world class genetics to locations across the globe
-              including the United States.
-            </p>
+          <div class="map-heading">
+            <div class="section-intro">
+              <p class="eyebrow">Exports</p>
+
+              <h2>Worldwide genetics</h2>
+
+              <p>
+                We export our world class genetics to locations across the
+                globe, including the United States.
+              </p>
+            </div>
+
+            <span class="map-caption">Selected markets</span>
           </div>
-          <div class="section-map-inner" id="usage-map"></div>
+
+          <div class="section-map-inner">
+            <div id="usage-map"></div>
+          </div>
         </div>
       </section>
 
+      <!-- Breeding Program -->
       <section class="section section-program">
         <div class="section-inner">
-          <div class="section-intro">
-            <p class="eyebrow">Breeding Program</p>
-            <h3>Selected for the next generation</h3>
-            <p>
+          <div class="program-heading">
+            <div class="section-intro">
+              <p class="eyebrow">Breeding Program</p>
+
+              <h2>Selected for the next generation</h2>
+            </div>
+
+            <p class="program-lead">
               Our breeding program pairs proven sires with dams chosen for
               calving ease and carcase quality. Every joining is planned, every
-              calf recorded, and every animal assessed against strict standards
-              before it enters our herd book.
+              calf recorded, and every animal assessed against strict standards.
             </p>
           </div>
+
           <div class="process-grid">
             <div class="process-step">
               <span class="process-number">01</span>
-              <h4>Selection</h4>
-              <p>
-                Sires and dams are paired for calving ease and carcase quality.
-              </p>
+
+              <div class="process-content">
+                <h3>Selection</h3>
+
+                <p>
+                  Sires and dams are paired for calving ease and carcase
+                  quality.
+                </p>
+              </div>
             </div>
+
             <div class="process-step">
               <span class="process-number">02</span>
-              <h4>Joining</h4>
-              <p>Every joining is planned in advance and fully recorded.</p>
+
+              <div class="process-content">
+                <h3>Joining</h3>
+
+                <p>Every joining is planned in advance and fully recorded.</p>
+              </div>
             </div>
+
             <div class="process-step">
               <span class="process-number">03</span>
-              <h4>Herd Book</h4>
-              <p>Calves are assessed against strict standards before entry.</p>
+
+              <div class="process-content">
+                <h3>Herd Book</h3>
+
+                <p>
+                  Calves are assessed against strict standards before entry.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- The Land -->
       <section class="section section-land">
         <div class="section-inner section-land-inner">
           <div class="land-media" aria-hidden="true"></div>
+
           <div class="land-text">
             <p class="eyebrow">The Land</p>
-            <h3>Raised on open pasture</h3>
+
+            <h2>Raised on open pasture</h2>
+
             <p>
               Our cattle are pasture-raised across open grazing country, with
-              low-stress handling and careful nutrition at every stage. It's a
-              slower way to farm, and it shows in the quality of the animal we
-              produce.
+              low-stress handling and careful nutrition at every stage.
+            </p>
+
+            <p>
+              It's a slower way to farm, and it shows in the quality of the
+              animal we produce.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- Contact -->
       <section class="section section-farmer" id="contact">
         <div class="section-inner">
-          <p class="eyebrow">Get in Touch</p>
-          <div class="farmer-card">
+          <div class="contact-heading">
+            <p class="eyebrow">Get in Touch</p>
+
+            <h2>Talk to the farm</h2>
+          </div>
+
+          <div class="farmer-profile">
             <div class="farmer-photo" aria-hidden="true"></div>
+
             <div class="farmer-details">
-              <h3>Aron Murphy</h3>
-              <p class="farmer-title">Owner &amp; Farm Manager</p>
+              <p class="farmer-role">Owner &amp; Farm Manager</p>
+
+              <h2>Aron Murphy</h2>
+
               <ul class="farmer-contact">
                 <li>
                   <span class="contact-label">Phone</span>
                   <a href="tel:+61428235300">0428 235 300</a>
                 </li>
+
                 <li>
                   <span class="contact-label">Email</span>
-                  <a href="mailto:aronmurphy@wingfieldwagyu.com.au"
-                    >aronmurphy@wingfieldwagyu.com.au</a
-                  >
+                  <a href="mailto:aronmurphy@wingfieldwagyu.com.au">
+                    aronmurphy@wingfieldwagyu.com.au
+                  </a>
                 </li>
+
                 <li>
                   <span class="contact-label">Location</span>
                   <span>Yuleba, QLD</span>
                 </li>
               </ul>
+            </div>
+
+            <div class="contact-side-note">
+              <span class="about-note-line"></span>
+
+              <p>
+                For enquiries regarding genetics, cattle or the breeding
+                program.
+              </p>
             </div>
           </div>
         </div>
@@ -169,8 +274,13 @@
     </main>
 
     <footer class="site-footer">
-      <p>Wingfield Wagyu - 2026</p>
+      <div class="footer-inner">
+        <p>Wingfield Wagyu</p>
+        <p>Yuleba · Queensland · Australia</p>
+        <p>© 2026</p>
+      </div>
     </footer>
+
     <script src="js/script.js" defer></script>
     <script src="js/map.js" defer></script>
   </body>
