@@ -16,7 +16,7 @@ new svgMap({
     .trim(),
   hideFlag: true,
   hideTooltip: true,
-  mouseWheelZoomEnabled: true,
+  mouseWheelZoomEnabled: false,
   data: {
     data: {
       used: { name: "Status", format: "{0}" },
