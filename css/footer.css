@@ -1,0 +1,25 @@
+.site-footer {
+  background: var(--color-hero-bg);
+  color: rgba(245, 241, 232, 0.55);
+
+  padding: 2rem var(--page-padding);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-inner p:first-child {
+  color: var(--color-hero-text);
+
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}

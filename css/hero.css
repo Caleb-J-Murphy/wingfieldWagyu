@@ -1,0 +1,111 @@
+.hero {
+  position: relative;
+
+  min-height: 88vh;
+  padding: 8rem var(--page-padding) 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: var(--color-hero-bg);
+  color: var(--color-hero-text);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -30px;
+
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(4px);
+  transform: scale(1.08) translateY(0);
+
+  will-change: transform;
+  opacity: 0;
+
+  animation: heroImageIn 1.8s ease-out forwards;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(33, 29, 25, 0.56) 0%,
+    rgba(33, 29, 25, 0.48) 40%,
+    rgba(33, 29, 25, 0.76) 100%
+  );
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 900px;
+
+  text-align: center;
+}
+
+.hero-kicker {
+  margin-bottom: 1.8rem;
+
+  color: rgba(245, 241, 232, 0.72);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 11vw, 8.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.035em;
+}
+
+.hero-rule {
+  width: 52px;
+  height: 1px;
+  margin: 2.4rem auto 1.4rem;
+
+  background: var(--color-accent-soft);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #d9cfbf;
+}
+
+.hero-scroll {
+  position: absolute;
+  z-index: 1;
+
+  left: var(--page-padding);
+  bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  color: rgba(245, 241, 232, 0.55);
+
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-scroll-line {
+  display: block;
+
+  width: 40px;
+  height: 1px;
+
+  background: rgba(245, 241, 232, 0.4);
+}

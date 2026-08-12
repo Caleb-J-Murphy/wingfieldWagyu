@@ -1,0 +1,122 @@
+.section-farmer {
+  background: var(--color-bg);
+}
+
+.section-farmer .section-inner {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contact-heading {
+  margin-left: 5%;
+  margin-bottom: 4rem;
+}
+
+.contact-heading h2 {
+  max-width: 600px;
+}
+
+.farmer-profile {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) 220px;
+
+  gap: 3.5rem;
+  align-items: center;
+
+  margin-left: 5%;
+  padding: 3.5rem 0;
+
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.farmer-photo {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-bg-alt);
+  background-image: url("../images/farmer.jpg");
+  background-size: cover;
+  background-position: center;
+
+  border: 6px solid var(--color-bg);
+  outline: 1px solid var(--color-line);
+
+  box-shadow: 0 15px 35px -20px rgba(33, 29, 25, 0.4);
+}
+
+.farmer-role {
+  margin-bottom: 0.4rem;
+
+  color: var(--color-accent);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.farmer-details h2 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.farmer-contact {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.farmer-contact li {
+  display: flex;
+
+  gap: 1rem;
+  align-items: baseline;
+
+  font-size: 0.92rem;
+}
+
+.contact-label {
+  min-width: 4.5rem;
+
+  color: var(--color-muted);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.farmer-contact a {
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--color-line);
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.farmer-contact a:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.contact-side-note {
+  align-self: center;
+}
+
+.contact-side-note p {
+  color: var(--color-muted);
+
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.45;
+}

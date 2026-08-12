@@ -1,0 +1,51 @@
+.section-map {
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.section-map .section-inner {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+
+.map-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  align-items: end;
+  gap: 3rem;
+
+  margin-left: 10%;
+}
+
+.map-caption {
+  padding-bottom: 0.25rem;
+
+  color: var(--color-muted);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-map-inner {
+  width: min(1150px, 100vw);
+
+  margin-top: 4rem;
+  margin-left: 50%;
+
+  transform: translateX(-50%);
+}
+
+#usage-map {
+  width: 100%;
+}
+
+#usage-map .svgMap-map-wrapper {
+  background-color: transparent;
+}
+
+.svgMap-tooltip {
+  display: none !important;
+}

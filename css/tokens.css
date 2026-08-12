@@ -1,0 +1,24 @@
+:root {
+  --color-bg: #f5f1e8;
+  --color-bg-alt: #ebe4d5;
+
+  --color-ink: #211d19;
+  --color-ink-soft: #4a443c;
+  --color-muted: #81786b;
+
+  --color-accent: #7c2d22;
+  --color-accent-soft: #a8483a;
+
+  --color-line: #d8cfbd;
+
+  --color-hero-bg: #211d19;
+  --color-hero-text: #f5f1e8;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --max-width: 1120px;
+  --page-padding: 2rem;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

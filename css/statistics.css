@@ -1,0 +1,46 @@
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 6rem;
+
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.stat {
+  min-height: 150px;
+
+  padding: 2.2rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat + .stat {
+  border-left: 1px solid var(--color-line);
+}
+
+.stat-value {
+  color: var(--color-accent);
+
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+
+  letter-spacing: -0.02em;
+}
+
+.stat-value span {
+  font-size: 0.7em;
+}
+
+.stat-label {
+  margin-top: 0.7rem;
+
+  color: var(--color-muted);
+
+  font-size: 0.78rem;
+  line-height: 1.45;
+}

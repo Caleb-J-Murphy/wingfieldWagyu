@@ -1,0 +1,40 @@
+.section {
+  position: relative;
+}
+
+.section-inner {
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+
+  padding: 7rem var(--page-padding);
+}
+
+.section h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.025em;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 700px;
+}
+
+.section-intro > p:not(.eyebrow),
+.intro-copy {
+  color: var(--color-ink-soft);
+}
+
+.intro-copy {
+  max-width: 58ch;
+  margin-top: 1.4rem;
+}

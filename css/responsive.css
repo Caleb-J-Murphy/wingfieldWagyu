@@ -1,0 +1,303 @@
+/* ---------------------------------------------------------
+   Tablet
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  :root {
+    --page-padding: 1.5rem;
+  }
+
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    gap: 3rem;
+    margin-left: 0;
+  }
+
+  .map-heading,
+  .program-heading {
+    margin-left: 0;
+  }
+
+  .program-heading {
+    gap: 3rem;
+  }
+
+  .farmer-profile {
+    margin-left: 0;
+    grid-template-columns: 160px minmax(0, 1fr);
+  }
+
+  .farmer-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .contact-side-note {
+    grid-column: 2;
+  }
+
+  .land-media {
+    width: 72%;
+  }
+
+  .land-text {
+    width: 42%;
+    padding: 2.5rem;
+  }
+}
+
+/* ---------------------------------------------------------
+   Mobile
+--------------------------------------------------------- */
+
+@media (max-width: 680px) {
+  :root {
+    --page-padding: 1.25rem;
+  }
+
+  .nav-inner {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    min-height: 82vh;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.3rem, 17vw, 5.2rem);
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  .section-inner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  /* About */
+
+  .section-about {
+    margin-top: -1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .section-about .section-inner {
+    padding-top: 5.5rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-left: 0;
+  }
+
+  .about-note {
+    max-width: 280px;
+  }
+
+  /* Stats */
+
+  .stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+  }
+
+  .stat {
+    min-height: 130px;
+    padding: 1.7rem 1rem;
+  }
+
+  .stat:nth-child(3) {
+    border-left: none;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .stat:nth-child(4) {
+    border-top: 1px solid var(--color-line);
+  }
+
+  .stat-value {
+    font-size: 1.9rem;
+  }
+
+  /* Map */
+
+  .section-map .section-inner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .map-heading {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-left: 0;
+  }
+
+  .map-caption {
+    padding-bottom: 0;
+  }
+
+  .section-map-inner {
+    width: 125vw;
+    margin-top: 2.5rem;
+  }
+
+  /* Program */
+
+  .section-program .section-inner {
+    padding-top: 5.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .program-heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-left: 0;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .process-grid::before {
+    top: 0;
+    bottom: 0;
+    left: 0.8rem;
+    right: auto;
+
+    width: 1px;
+    height: auto;
+  }
+
+  .process-step {
+    grid-template-columns: 1.6rem 1fr;
+    gap: 1.5rem;
+  }
+
+  .process-content {
+    padding-top: 0;
+  }
+
+  /* Land */
+
+  .section-land-inner {
+    min-height: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .land-media {
+    width: 100%;
+    height: 440px;
+  }
+
+  .land-text {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    width: calc(100% - 2rem);
+
+    margin-top: -5rem;
+    margin-left: 2rem;
+
+    padding: 2.5rem 2rem;
+  }
+
+  /* Contact */
+
+  .section-farmer .section-inner {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+
+  .contact-heading {
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+
+  .farmer-profile {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    margin-left: 0;
+    padding: 3rem 0;
+
+    text-align: left;
+  }
+
+  .farmer-photo {
+    width: 145px;
+    height: 145px;
+  }
+
+  .farmer-details h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-side-note {
+    grid-column: auto;
+    max-width: 280px;
+  }
+
+  /* Footer */
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* ---------------------------------------------------------
+   Small mobile
+--------------------------------------------------------- */
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    min-height: auto;
+    padding: 1.5rem 0;
+  }
+
+  .stat + .stat,
+  .stat:nth-child(3),
+  .stat:nth-child(4) {
+    border-left: none;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .land-media {
+    height: 360px;
+  }
+
+  .land-text {
+    width: calc(100% - 1rem);
+    margin-left: 1rem;
+  }
+
+  .farmer-contact li {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}

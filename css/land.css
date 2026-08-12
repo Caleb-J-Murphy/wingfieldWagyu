@@ -1,0 +1,52 @@
+.section-land {
+  background: var(--color-bg-alt);
+}
+
+.section-land-inner {
+  position: relative;
+
+  min-height: 680px;
+
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.land-media {
+  width: 68%;
+  height: 540px;
+
+  background-image: url("../images/land.jpg");
+  background-size: cover;
+  background-position: center;
+
+  background-color: var(--color-line);
+}
+
+.land-text {
+  position: absolute;
+
+  right: var(--page-padding);
+  bottom: 8rem;
+
+  width: min(430px, 43%);
+
+  padding: 3.5rem;
+
+  background: var(--color-bg);
+
+  box-shadow: 0 20px 60px -35px rgba(33, 29, 25, 0.4);
+}
+
+.land-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.land-text p:not(.eyebrow) {
+  max-width: 42ch;
+
+  color: var(--color-ink-soft);
+}
+
+.land-text p + p {
+  margin-top: 1rem;
+}
