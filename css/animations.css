@@ -97,3 +97,39 @@
     transform: none;
   }
 }
+
+/* ---------------------------------------------------------
+   Land entrance animation
+--------------------------------------------------------- */
+
+.land-media,
+.land-text {
+  opacity: 0;
+  transition:
+    opacity 0.9s var(--ease),
+    transform 1s var(--ease);
+}
+
+.land-media {
+  transform: translateX(-70px);
+}
+
+.land-text {
+  transform: translateX(70px);
+}
+
+/* Activated when the section enters the viewport */
+
+.section-land.is-visible .land-media,
+.section-land.is-visible .land-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slightly delay the text so the two elements feel like
+   they are moving toward each other rather than appearing
+   at exactly the same time. */
+
+.section-land.is-visible .land-text {
+  transition-delay: 0.15s;
+}
