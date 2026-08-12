@@ -147,8 +147,16 @@
   }
 
   .section-map-inner {
-    width: 125vw;
+    max-width: 80vw;
+    width: 100%;
     margin-top: 2.5rem;
+    margin-left: 0;
+    transform: none;
+  }
+
+  #usage-map {
+    width: 100%;
+    max-width: 100%;
   }
 
   /* Program */
